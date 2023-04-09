@@ -81,34 +81,42 @@ section img{
     width:300px
 }
 
-.con1, .con2{
-    display: block;
-    position: absolute;
-}
-.con{
-    width: 250px;
-}
 
 .tint{
     position: absolute;
     width: 100%;
     height: 105%;
     background-color: rgba(252, 252, 252, 0.8);
+    
 }  
+
+.con1, .con2{
+    display: block;
+    position: absolute;
+}
+.con{
+    width: 250px;
+
+}
+
 
 #top{
     display: flex;
     justify-content: center;
     /* flex-direction: column; */
     align-items: center;
-    background-image: url(/images/wallpaperflare.com_wallpaper\ \(3\).jpg);
+    background-image: url(../images/wallpaperflare.com_wallpaper\ \(3\).jpg);
 
     width: 100%;
     height: 100vh;
 }
+.in_right, .in_left{
+    z-index: 4;
+}
+
 .in_right{
     margin-left: 30px;
-}
+}s
 .cap{
     font-size: 100px;
 }
@@ -347,8 +355,6 @@ main{
 
     .contact{
         margin-top: 30px;
-        margin-left: 50%;
-        transform: translate(-50%);
         width: 90vw;
     }
 

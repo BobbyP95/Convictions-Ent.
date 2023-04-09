@@ -3,13 +3,7 @@ const nav_btn = $(".nav-button");
 $(".menu").addClass('menu_active');
 nav_btn.click(()=>{ 
     $('.menu').toggle('slow')
-    // if (nav_on === false){
-    //     $(".menu").addClass('menu_active');
-    //     nav_on = true
-    // }else{
-    //     $(".menu").removeClass('menu_active');
-    //     nav_on = false
-    // }
+
     
 });
 

@@ -1,0 +1,379 @@
+/* #navbarNav{
+    display: block;
+} */
+/* nav bar styling */
+/* #title_main{
+    margin-top: 50px;
+    margin-left: 50%;
+    transform: translate(-50%);
+} */
+body{
+    background-color: rgb(246, 248, 249);
+}
+p{
+    text-align:justify;
+    font-size: 20px;
+}
+
+
+/*------------------------- Nav Bar */
+nav{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 60px;
+    background-color: rgba(218, 218, 218, 0.922);
+    top: 0px;
+    z-index: 10;
+}
+
+.nav_cont{
+    display: flex;
+    align-items: center;
+}
+
+
+.nav_cont li{
+    list-style: none;
+    float: left;
+}
+
+.nav_cont ul,button{
+    margin: 5px;
+    margin-right: 30px;
+}
+.menu{
+    margin-right: 20px;
+}
+
+.list {
+    margin-left:20px ;
+    /* border: 3px solid black; */
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 3px;
+    color: black;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.list:hover{
+    background-color: rgb(85, 4, 4);
+    color: aliceblue;
+    cursor: pointer;
+}
+.nav-button{
+    display: none;
+    border-radius: 5px;
+    width:30px;margin-right: 5px;
+    padding: 5px;
+
+}
+.nav-button:hover{
+    border: 1px solid;
+}
+
+
+
+/*------------------ Top section header */
+section img{
+    width:300px
+}
+
+.con1, .con2{
+    display: block;
+    position: absolute;
+}
+.con{
+    width: 250px;
+}
+
+.tint{
+    position: absolute;
+    width: 100%;
+    height: 105%;
+    background-color: rgba(252, 252, 252, 0.8);
+}  
+
+#top{
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    align-items: center;
+    background-image: url(/images/wallpaperflare.com_wallpaper\ \(3\).jpg);
+
+    width: 100%;
+    height: 100vh;
+}
+.in_right{
+    margin-left: 30px;
+}
+.cap{
+    font-size: 100px;
+}
+.in_right h1{
+    color: brown;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    font-family: Ubuntu;
+    font-weight: bolder;
+    font-size: 60px;
+
+}
+
+
+/*----------------- main stuff */
+main{
+    max-width: 1000px;
+    margin: auto;
+    /* background-color: aquamarine; */
+    padding: 10px;
+}
+
+/* .bg_img{
+    width: 100%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/WhatsApp\ Image\ 2023-04-03\ at\ 19.07.58.jpg);
+}
+*/
+
+#welcome div{
+    margin-top: 30px;
+}
+
+        
+
+    /* capital letters to start paragraphers */
+.cap_p{
+    font-size: 40px;
+    color: brown;
+}
+
+    /* Read more button */
+.hide{
+    display: none;
+}
+
+.read{
+    background-color:brown;
+    color:white;
+    margin: 10px;
+    margin-bottom: 60px;
+}
+
+.read:hover{
+    border: 2px solid brown;
+}
+
+
+/*-------------------------- Services section */
+#services{
+    border-top: rgb(110, 12, 7) 1px solid;;
+    padding-top: 80px;
+}
+
+#services h2{
+    margin-left: 20px;
+}
+
+.main_services{
+    border: rgb(110, 12, 7) 2px solid;
+    border-radius: 10px;
+    border-left: 0px;
+    border-right: 0px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.main_services div{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+}
+.msp{
+    margin-bottom: 60px;
+}
+
+.main_services div div h2{
+    /* margin-top: 15%; */
+    font-family:  ubuntu,Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: brown;
+
+}
+.main_services div{
+    padding: 10px;
+}
+
+    /* Svg images for services */
+.illustration{
+    position: relative;
+}
+.small_pic{
+    position: absolute;
+    top: 10px;
+    width: 150px;
+}
+
+
+
+/* Contact section */
+.contact{
+    margin-top: 70px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    width: 70%;
+}
+.cont_h1{
+    color: rgb(110, 12, 7);;
+    text-align: center;
+    font-family: ubuntu;
+}
+.contact_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    border: 2px rgb(110, 12, 7) solid;
+    height: inherit;
+    color: rgb(110, 12, 7);
+    margin-left:20px;
+    margin-right: 20px;
+    
+}
+.contact_div div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.contact_div div div,p{
+    margin: 20px;
+}
+/* .contact_div div div{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(240, 248, 255, 0.227);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 50%;
+}
+ */
+
+
+/*-------------------------- Mobile Phone Mode-------------------------- */
+
+ @media screen and (max-width:700px){
+    p{
+        font-size: 16px;
+    }
+        
+    .menu{display: none;}
+    nav{
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+
+    .menu_active{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top:49.5px;
+        right: 0px;
+        margin-right: 0px;
+        background-color: rgba(218, 218, 218, 0.797);
+        border-bottom-left-radius:50%;
+        padding-bottom:20px;
+        padding-top: 20px;
+        padding-right: 20px;
+    }
+    
+    .nav-button{
+        display: block;
+    }
+
+    #top{
+        height: 50vh;
+    }
+
+    .tint{
+        height: 55%;
+    }  
+    .con{
+        width: 150px;
+    }
+
+    .in_right h1{
+        font-size: 20px;
+    }
+
+    .cap{
+        font-size: 40px;
+    }
+
+    .read{
+        margin-left: 50%;
+        transform: translate(-50%);
+    }
+
+    .main_services div{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .main_services div div h2{
+        font-size: 30px;
+    }
+
+    .large_pic{
+        width: 180px;
+    }
+    .small_pic{
+        position: absolute;
+        top: 10px;
+        width: 100px;
+    }
+    
+
+    .contact{
+        margin-top: 30px;
+        margin-left: 50%;
+        transform: translate(-50%);
+        width: 90vw;
+    }
+
+    .contact_div div div,p{
+        margin: 15px;
+    }
+
+}
+
+@media screen and (max-width:460px){
+    .con{
+        width: 120px;
+    }
+    .in_left{margin-left: 10px;}
+    .in_right{
+        margin: 2px;
+    }
+
+    .in_right h1{
+        font-size: 20px;
+        margin: 5px;
+    }
+
+    .cap{
+        font-size: 35px;
+    }
+
+}

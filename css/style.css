@@ -239,7 +239,7 @@ main{
 .base{
     display: flex;
     margin: 20px;
-    background-image: url(/images/scott-graham-5fNmWej4tAA-unsplash.jpg);
+    background-image: url(../images/scott-graham-5fNmWej4tAA-unsplash.jpg);
 
 }
 .base .left{

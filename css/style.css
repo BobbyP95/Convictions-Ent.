@@ -8,7 +8,7 @@
     transform: translate(-50%);
 } */
 body{
-    background-color: rgb(246, 248, 249);
+    background: linear-gradient(rgb(221, 221, 221),rgb(250,250,250),rgb(250,250,250),rgb(250, 250, 250)) ;
 }
 p{
     text-align:justify;
@@ -186,15 +186,20 @@ main{
 
 #services h2{
     margin-left: 20px;
+    text-align: center;
 }
 
+.name_of_service{
+    text-shadow:2px 2px rgba(0, 0, 0, 0.4);
+}
 .main_services{
-    border: rgb(110, 12, 7) 2px solid;
+    /* border: rgb(110, 12, 7) 2px solid;
     border-radius: 10px;
     border-left: 0px;
-    border-right: 0px;
+    border-right: 0px; */
     width: 100%;
     margin-bottom: 40px;
+    padding: 20px;
 }
 .main_services div{
     display: flex;
@@ -206,12 +211,13 @@ main{
     margin-bottom: 60px;
 }
 
-.main_services div div h2{
+ h2{
     /* margin-top: 15%; */
     font-family:  ubuntu,Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 40px;
     color: brown;
+    text-shadow:2px 2px rgba(0, 0, 0, 0.4);
 
 }
 .main_services div{
@@ -230,6 +236,64 @@ main{
 
 
 
+.base{
+    display: flex;
+    margin: 20px;
+    background-image: url(/images/scott-graham-5fNmWej4tAA-unsplash.jpg);
+
+}
+.base .left{
+    width: 50vw;
+
+}
+
+.base_cont{
+    margin-top: 20px;
+    display: flex;
+    background-color: rgba(251, 251, 251, 0.9);
+    border-left: 5px solid rgba(255, 255, 255);
+    border-top-left-radius: 25%;
+}
+.vision h2{
+    color: rgb(20, 110, 140);
+}
+
+.mission h2{
+   color: rgb(138, 126, 39)
+}
+
+/* .base_cont p{
+    border: solid 2px;
+    padding: 10px;
+} */
+.icon_div{
+    background-color: brown;
+    height: max-content;
+    padding: 10px;
+    border: 5px solid white ;
+    border-radius: 50%;
+    left: 70;
+
+}
+
+
+
+#scope{
+    background-color: rgb(20, 110, 140);
+}
+
+#target{
+    background-color: rgb(138, 126, 39);
+}
+
+#megaphone{
+    background-color: brown;
+}
+.base_cont img{
+    width: 100px;
+}
+
+
 /* Contact section */
 .contact{
     margin-top: 70px;
@@ -245,13 +309,12 @@ main{
 .contact_div{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     width: 100%;
     border: 2px rgb(110, 12, 7) solid;
     height: inherit;
     color: rgb(110, 12, 7);
-    margin-left:20px;
-    margin-right: 20px;
+ 
     
 }
 .contact_div div{
@@ -331,6 +394,9 @@ main{
         transform: translate(-50%);
     }
 
+    .main_services{
+        padding: 10px;
+    }
     .main_services div{
         display: flex;
         flex-direction: column-reverse;
@@ -352,12 +418,22 @@ main{
         width: 100px;
     }
     
+    .base_cont img{
+        width: 50px;
+    }
+    .base_cont h2{
+        font-size: 30px;
+    }
+    .base .left{
+        width: 0vw;
+    
+    }
 
     .contact{
         margin-top: 30px;
-        width: 90vw;
+        width: 100%;
     }
-
+    
     .contact_div div div,p{
         margin: 15px;
     }
